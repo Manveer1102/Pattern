@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() { 
+  int i,j,z,y,x,n;
+  cin>>n;
+  for(i=1;i<=n;i++){
+    for(j=0;j<(n-i);j++){
+      cout<<" ";
+    }
+    x=i;
+    y=i;
+    while(y!=0){
+      cout<<x;
+      x++;
+      y--;
+    }
+    int r=(i-1);
+    int z=((2*i)-2);
+    while(r!=0){
+      cout<<z;
+      z--;
+      r--;
+    }
+    cout<<endl;
+  }
+  return 0;
+}
