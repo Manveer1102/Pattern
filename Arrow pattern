@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+
+int main(){
+  int i,j,k,n,h,g;
+  cin>>n;
+  for(i=1;i<=n;i++){
+    if(i<=(n/2)+1){
+      for(j=1;j<i;j++){
+        cout<<" ";
+      }
+      for(k=0;k<i;k++){
+        cout<<"*"<<" ";
+      }
+    }
+    else{
+      for(h=1;h<(n-i+1);h++){
+        cout<<" ";
+      }
+      for(g=0;g<(n-i+1);g++){
+        cout<<"*"<<" ";
+      }
+    }
+    cout<<endl;
+  }
+  return 0;
+}
+
+
