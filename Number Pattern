@@ -1,0 +1,41 @@
+
+
+
+void printPattern(int n){
+  int m;
+  m=2*n-1;
+  for(int i=1;i<=m;i++){
+    int l=n;
+    if(i<=n){
+      for(int k=1;k<=m;k++){
+        if(k>=i && k<=m-i+1){
+          cout<<l<<" ";
+        }
+        if(k<i){
+          cout<<l<<" ";
+          l--;
+        }
+        if(k>m-i+1){
+          l++;
+          cout<<l<<" ";
+        }
+      }
+    }
+    if(i>n){
+      for(int k=1;k<=m;k++){
+        if(k>=m-i+1 && k<i+1){
+          cout<<l<<" ";
+        }
+        if(k<m-i+1){
+         cout<<l<<" ";
+          l--;
+        }
+        if(k>=i+1){
+          l++;
+          cout<<l<<" ";
+        }
+      }
+    }
+    cout<<endl;
+  }
+}
